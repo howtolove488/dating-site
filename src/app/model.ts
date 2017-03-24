@@ -4,19 +4,20 @@
 // Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license
                     
 
-import './polyfills.ts';
+export class Model {
+  name: string;
+  status: string;
+  about: string;
+  messages: Message[];
 
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
-import { environment } from './environments/environment';
-import { AppModule } from './app/app.module';
-
-if (environment.production) {
-  enableProdMode();
+  rows: number;
+  cols: number;
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
-
+export class Message {
+  who: string;
+  message: string;
+}
 
 
 // Copyright 2016 Google Inc. All Rights Reserved.

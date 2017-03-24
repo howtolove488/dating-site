@@ -1,15 +1,23 @@
-import { TestBed, async } from '@angular/core/testing';
 
+
+// Copyright 2016 Google Inc. All Rights Reserved.
+// Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license
+                    
+
+/* tslint:disable:no-unused-variable */
+
+import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
       ],
-    }).compileComponents();
-  }));
+    });
+    TestBed.compileComponents();
+  });
 
   it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -30,3 +38,9 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('h1').textContent).toContain('app works!');
   }));
 });
+
+
+
+// Copyright 2016 Google Inc. All Rights Reserved.
+// Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at https://angular.io/license
+            
